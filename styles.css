@@ -1,0 +1,164 @@
+/* mobile first */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font: 18px "Courier New", monospace;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+  background:  linear-gradient(
+    180deg,
+    white,
+    darkBlue
+    );
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  font-size: 1.3rem;
+  color: darkBlue;
+  text-decoration: underline overline;
+  text-decoration-color: darkBlue;
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1.5rem;
+  text-align: center;
+  background-color: darkBlue;
+  z-index: 10;
+  padding-top: 0.4rem;
+}
+.nav-links {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.nav-links:last-child {
+  float: right;
+  padding-right: 5%;
+}
+#welcome-section {
+  height: 100vh;
+}
+h1 {
+  padding-top: 130px;
+  text-align: center;
+  font: 0.9rem "Courier New", monospace;
+  color: darkBlue;
+}
+#image-portrait {
+  margin: auto;
+  border-radius: 15%;
+  width: 100px;
+  height: auto;
+  border: 3px solid darkBlue;
+  border-bottom: 0;
+}
+.intro-description {
+  font-variant: small-caps;
+  text-align: center;
+}
+#intro {
+  margin-top: 60px;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.project-description {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: center;
+}
+.project-description p {
+  font-size: 0.9rem;
+  text-align: justify;
+  padding-right: 5px;
+}
+.stack {
+  font-size: 0.5rem;
+  font-variant: small-caps;
+  font-family: cursive;
+  font-weight: bolder;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+.thumbnail {
+  position: relative;
+  width: 50px;
+}
+.link-symbol {
+  font-size: 0.5rem;
+  position: absolute;
+}
+.box {
+  display: inline-block;
+  width:10px;
+  height: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.box-css {
+  background-color: fuchsia;
+}
+.box-html {
+  background-color: darkBlue;
+}
+#projects {
+  margin-bottom: 50px;
+}
+#interests_and_hobbies {
+  font-size: 0.9rem;
+  text-align: justify;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .project-description {
+    grid-template-columns: 25% 73%;
+  }
+  .thumbnail {
+    width: 120px;
+  }
+  .stack {
+    margin-left: 4%;
+  }
+  #interests_and_hobbies {
+    padding: 15px 5% 15px 5%;
+  }
+}
+@media (min-width: 1000px) {
+  .stack {
+    margin-left: 5%;
+  }
+  #project-container {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-tile {
+    flex: 1 0 50%;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+}
