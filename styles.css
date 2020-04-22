@@ -132,6 +132,9 @@ h1 {
   padding: 10px;
 }
 @media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
   .project-description {
     grid-template-columns: 25% 73%;
   }
