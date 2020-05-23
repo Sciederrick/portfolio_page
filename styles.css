@@ -46,13 +46,27 @@ img {
   padding-top: 0.4rem;
 }
 .nav-links {
+  display: none;
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
 }
-.nav-links:last-child {
-  float: right;
+#profile-link {
+  position: fixed;
+  top: 7px;
+  right: 0;
+  color: white;
   padding-right: 5%;
+}
+.fa-bars {
+  float: left;
+  color: white;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+.fa-angle-up {
+  display: none;
+  padding-left: 2.5%;
 }
 #welcome-section {
   height: 100vh;
@@ -135,8 +149,21 @@ h1 {
   :root {
     font-size: 20px;
   }
+  .fa-bars {
+    margin-left: 40px;
+    font-size: 1.1rem;
+  }
+  #profile-link {
+    font-size: 1.1rem;
+  }
+  #image-portrait {
+    width: 120px;
+  }
   .project-description {
     grid-template-columns: 25% 73%;
+  }
+  .project-description p {
+    padding-left: 12px;
   }
   .thumbnail {
     width: 120px;
@@ -162,6 +189,15 @@ h1 {
   }
 }
 @media (min-width: 1000px) {
+  .fa-bars {
+    display: none;
+  }
+  .nav-links {
+    display: inline-block;
+  }
+  .project-description p {
+    padding-left: 10px;
+  }
   .stack {
     margin-left: 5%;
   }
